@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Ejercicio 1 - Lista de Productos
 const productos = [
   { id: 1, nombre: "Camiseta", precio: 25, categoria: { id: 1, nombre: "Ropa" } },
   { id: 2, nombre: "Zapatos deportivos", precio: 60, categoria: { id: 2, nombre: "Calzado" } },
@@ -26,7 +25,6 @@ function ListaProductos() {
   );
 }
 
-// Ejercicio 2 - Lista de Usuarios con Direcciones
 const usuarios = [
   { id: 1, nombre: "Ana", direccion: { calle: "Calle 10", ciudad: "Bogotá", pais: "Colombia" } },
   { id: 2, nombre: "Luis", direccion: { calle: "Av. Reforma", ciudad: "Ciudad de México", pais: "México" } },
@@ -51,7 +49,6 @@ function ListaUsuarios() {
   );
 }
 
-// Ejercicio 3 - Lista de Cursos con Módulos
 const cursos = [
   { id: 1, nombre: "React", modulos: [{ nombre: "Componentes" }, { nombre: "Hooks" }] },
   { id: 2, nombre: "Next.js", modulos: [{ nombre: "SSR" }, { nombre: "Static Props" }] },
@@ -80,7 +77,6 @@ function ListaCursos() {
   );
 }
 
-// Ejercicio 4 - Lista de Pedidos con Productos
 const pedidos = [
   { id: 1, cliente: "Ana", productos: [{ nombre: "Camiseta", cantidad: 2 }, { nombre: "Gorra", cantidad: 1 }] },
   { id: 2, cliente: "Luis", productos: [{ nombre: "Zapatos", cantidad: 1 }, { nombre: "Bolso", cantidad: 2 }] },
@@ -110,7 +106,6 @@ function ListaPedidos() {
   );
 }
 
-// Ejercicio 5 - Lista de Blogs con estructura de datos profundamente anidada
 const blogs = [
   {
     id: 1, titulo: "Aprendiendo React", autor: { nombre: "Ana", pais: "Colombia" },
@@ -204,7 +199,6 @@ function ListaBlogs() {
   );
 }
 
-// Componente principal de la página que renderiza todos los ejercicios
 export default function EjerciciosPage() {
   return (
     <div style={{ fontFamily: 'sans-serif', padding: '20px' }}>
@@ -220,4 +214,5 @@ export default function EjerciciosPage() {
       <ListaBlogs />
     </div>
   );
+
 }
